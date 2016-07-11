@@ -1,21 +1,63 @@
-// Louie uses a Sass port of Skeleton (http://getskeleton.com)
-// for modular typographic defaults and for a the grid.
 
-//@import 'base/normalize';
-//@import 'base/variables';
-//@import 'base/grid';
-//@import 'base/typography';
-//@import 'base/mixins';
-//@import 'base/utilities';
+/*! system-font.css v1.1.0 | CC0-1.0 License | github.com/jonathantneal/system-font-face */
 
-// To include your own styles for
-// a component called 'component',
-// add it to this file like so:
+@font-face {
+	font-family: system;
+	font-style: normal;
+	font-weight: 300;
+	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("system-Light"), local("DroidSans"), local("Tahoma");
+}
 
-// @import 'custom/component.scss'
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,600);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,800);
+@font-face {
+	font-family: system;
+	font-style: italic;
+	font-weight: 300;
+	src: local(".SFNSText-LightItalic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Ubuntu Light Italic"), local("Segoe UI Light Italic"), local("system-LightItalic"), local("DroidSans"), local("Tahoma");
+}
 
+@font-face {
+	font-family: system;
+	font-style: normal;
+	font-weight: 400;
+	src: local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Ubuntu"), local("Segoe UI"), local("system-Regular"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+	font-family: system;
+	font-style: italic;
+	font-weight: 400;
+	src: local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Ubuntu Italic"), local("Segoe UI Italic"), local("system-Italic"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+	font-family: system;
+	font-style: normal;
+	font-weight: 500;
+	src: local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"), local("Ubuntu Medium"), local("Segoe UI Semibold"), local("system-Medium"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+	font-family: system;
+	font-style: italic;
+	font-weight: 500;
+	src: local(".SFNSText-MediumItalic"), local(".HelveticaNeueDeskInterface-MediumItalicP4"), local(".LucidaGrandeUI"), local("Ubuntu Medium Italic"), local("Segoe UI Semibold Italic"), local("system-MediumItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+	font-family: system;
+	font-style: normal;
+	font-weight: 700;
+	src: local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Ubuntu Bold"), local("system-Bold"), local("DroidSans-Bold"), local("Segoe UI Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+	font-family: system;
+	font-style: italic;
+	font-weight: 700;
+	src: local(".SFNSText-BoldItalic"), local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"), local("Ubuntu Bold Italic"), local("system-BoldItalic"), local("DroidSans-Bold"), local("Segoe UI Bold Italic"), local("Tahoma Bold");
+}
+
+@import url(https://fonts.googleapis.com/css?family=system:400,600);
 
 input:focus,
 textarea:focus,
@@ -27,7 +69,7 @@ a {
 }
 .butt {
     color: #000;
-    font-family: "Poppins";
+    font-family: "system";
     font-weight: 600;
     background-color: #fff;
     display: inline-block;
@@ -55,7 +97,7 @@ a {
 }
 .buttactive {
     color: #000;
-    font-family: "Poppins";
+    font-family: "system";
     font-weight: 600;
     background-color: #fff;
     display: inline-block;
@@ -90,7 +132,7 @@ a {
 .dtext {
     position: relative;
     color: #fff;
-    font-family: 'Poppins';
+    font-family: 'system';
     font-weight: 600;
     font-size: 18px;
     padding-top: 0px;
@@ -111,9 +153,11 @@ a {
     background-image: linear-gradient(#4F173C 0%, #210B19 100%);
 }
 .zero {
-    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-family: 'system';
     font-weight: 600;
-    font-size: 32px;
+    letter-spacing: -.05em;
+    font-size: 28px;
     color: #000;
     padding-top: 3px;
     padding-bottom: 1px;
@@ -123,7 +167,7 @@ a {
     transition-property: font-size;
 }
 .subzero {
-    font-family: 'Poppins';
+    font-family: 'system';
     font-weight: 600;
     font-size: 16px;
     color: #FF6E0F;
@@ -171,7 +215,7 @@ body {
 }
 .header-fixed p {
     color: #fff;
-    font-family: "Roboto";
+    font-family: "system";
     width: 710px;
     margin: auto;
 }
@@ -213,7 +257,7 @@ body {
 .Gyan {
     margin-left: 132px;
     margin-top: 36px;
-    font-family: Roboto;
+    font-family: system;
     font-size: 40px;
     font-weight: 800;
 }
@@ -247,8 +291,8 @@ body {
 }
 .txt {
     width: 220px;
-    font-family: Roboto, Helvetica, sans-serif;
-    font-weight: 300;
+    font-family: system, Helvetica, sans-serif;
+    font-weight: 400;
     font-size: 18px;
     position: relative;
     text-align: center;
@@ -258,33 +302,33 @@ body {
 }
 .blogtitle {
     padding-top: 120px;
+    text-transform: uppercase;
     margin: auto;
     width: 710px;
     color: #333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: Roboto, Helvetica, sans-serif;
-    letter-spacing: .01rem;
+    font-family: system, Helvetica, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 36px;
     line-height: 1.2;
-    letter-spacing: -.003em;
+    letter-spacing: -.03em;
 }
 .blogtitle2 {
+  text-transform: uppercase;
     padding-top: 48px;
     margin: auto;
     width: 710px;
-    color: #333;
+    color: #444;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: Roboto, Helvetica, sans-serif;
-    letter-spacing: .01rem;
+    font-family: system, Helvetica, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.2;
-    letter-spacing: -.003em;
+    letter-spacing: -.03em;
 }
 .blogsubtitle {
     margin: auto;
@@ -293,7 +337,7 @@ body {
     color: rgba(0, 0, 0, 0.44);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: system, Helvetica, sans-serif;
     letter-spacing: .01rem;
     font-weight: 300;
     font-size: 14px;
@@ -321,7 +365,7 @@ body {
 .blogtxt .imgdesc {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: system, Helvetica, sans-serif;
     letter-spacing: -0.01em;
     font-weight: 400;
     text-align: center;
@@ -340,7 +384,7 @@ body {
     text-shadow: -0.04167em -0.04167em 0 #F0F0F0, -0.04167em -0.02083em 0 #F0F0F0, -0.04167em 0em 0 #F0F0F0, -0.04167em 0.02083em 0 #F0F0F0, -0.04167em 0.04167em 0 #F0F0F0, -0.02083em -0.04167em 0 #F0F0F0, -0.02083em -0.02083em 0 #F0F0F0, -0.02083em 0em 0 #F0F0F0, -0.02083em 0.02083em 0 #F0F0F0, -0.02083em 0.04167em 0 #F0F0F0, 0em -0.04167em 0 #F0F0F0, 0em -0.02083em 0 #F0F0F0, 0em 0em 0 #F0F0F0, 0em 0.02083em 0 #F0F0F0, 0em 0.04167em 0 #F0F0F0, 0.02083em -0.04167em 0 #F0F0F0, 0.02083em -0.02083em 0 #F0F0F0, 0.02083em 0em 0 #F0F0F0, 0.02083em 0.02083em 0 #F0F0F0, 0.02083em 0.04167em 0 #F0F0F0, 0.04167em -0.04167em 0 #F0F0F0, 0.04167em -0.02083em 0 #F0F0F0, 0.04167em 0em 0 #F0F0F0, 0.04167em 0.02083em 0 #F0F0F0, 0.04167em 0.04167em 0 #F0F0F0;
 }
 .footer {
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: system, Helvetica, sans-serif;
     font-weight: 300;
     background: #333333;
     width: auto;
@@ -371,7 +415,7 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: system, Helvetica, sans-serif;
     font-weight: 900;
     display: inline-block;
     vertical-align: middle;
@@ -426,7 +470,7 @@ body {
     color: #000;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Poppins';
+    font-family: 'system';
     letter-spacing: .01rem;
     font-weight: 600;
     font-style: normal;
