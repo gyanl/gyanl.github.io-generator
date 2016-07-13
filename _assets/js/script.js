@@ -9,10 +9,38 @@ ga('send', 'pageview');
 var win = window,
     docEl = document.documentElement,
     $logo = document.getElementById('dis');
+    $bg = document.getElementById('main');
 
+    function genColor() {
+        var a = "";
+        for (var i = 0; i < 3; i++)
+            a = a.concat(Math.floor(Math.random() * 255).toString(16));
+
+        if (a.length < 6) {
+            for (var i = 0; i < (6 - a.length); i++)
+                a = "0" + a;
+        }
+        return "#" + a;
+    }
+
+var color = genColor();
+/*
 win.onscroll = function(){
    var sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
-   $logo.style.fontSize =  sTop > 10 ? "0":"32px" ;
+   $logo.className =  sTop > 10 ? "zero2":"zero" ;
+   if (sTop>0) {
+       document.body.style.background =  color;
+     }
+   if (sTop > .5*window.innerHeight) {
+     document.body.style.background =  "#900C3F"
+     }
+
+   if (sTop > 2*(window.innerHeight)) {
+       document.body.style.background =  "#e74c3c"
+     }
+
+
 };
+
 
 window.onload = init();

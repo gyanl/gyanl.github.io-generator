@@ -1,22 +1,30 @@
 {% include 'head.html' {
-  page: "index"
+  page: "main"
 }%}
 
 <div class="header-home2">
-    <center>  <div id=dis class="zero">
+  <span id=dis class="zero">
 Gyan Lakhwani
-  </div> </center>
-  <div class="subzero">
+  </span>
   <center>
+  <div class="subzero">
     <a  href="index.html"><div id="work" class="buttactive">WORK</div></a>
     <a  href="about.html"><div id="about" class="butt">ABOUT</div></a>
     <a  href="contact.html"><div id="contact" class="butt">CONTACT</div></a>
+</div>
+</center>
+</div>
+<div class="pagetransparent">
+<div class="hello">
+  <center>
+    Hello.<br> My name is Gyan Lakhwani.<br> I am a graphic & UI/UX designer.
   </center>
 </div>
 </div>
+<div class="page">
 
-<center><div class="spaced"></div>
-				 <div class="zero">Design</div>
+<center>
+	<div class="label">Design</div>
   {% include 'hackindia-tile.html' %}
   {% include 'jobsplane-tile.html' %}
   {% include 'mova1-tile.html' %}
@@ -24,16 +32,12 @@ Gyan Lakhwani
   {% include 'pmo-tile.html' %}
   {% include 'ioteractions-tile.html' %}
 
-
-  <div class="zero">Open Source</div>
+  <div class="label">Open Source</div>
   {% include 'tocky-tile.html' %}
   {% include 'username-tile.html' %}
   {% include 'chromagen-tile.html' %}
-<div class="spaced2">.
-
-</center>
 </div>
-
+</center>
   {% include 'footer.html' %}
 
 {% include 'scripts.html' %}

@@ -17,6 +17,33 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,800);
 
 
+.hello{
+  z-index: -2;
+  position:fixed;
+  text-shadow: 0px 1px 7px rgba(150, 150, 150, 0.5);
+  font-family: Poppins;
+  line-height: 1.4em;
+  color: #fff;
+  font-size: 24px;
+  top: 43%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pagetransparent{
+  min-height: 100vh;
+  margin: auto;
+  color: rgba(0, 0, 0, 0);
+}
+
+.page{
+  box-shadow: 0px -10px 34px 0px rgba(0, 0, 0, 0.10);
+  min-height: 100vh;
+  margin: auto;
+  background: #fff;
+}
+
 input:focus,
 textarea:focus,
 button:focus {
@@ -32,7 +59,7 @@ a {
     background-color: #fff;
     display: inline-block;
     min-width: 90px;
-    height: 34px;
+    height: 32px;
     padding: 0 21px;
     text-align: center;
     font-size: 11px;
@@ -60,7 +87,7 @@ a {
     background-color: #fff;
     display: inline-block;
     min-width: 90px;
-    height: 34px;
+    height: 32px;
     padding: 0 21px;
     text-align: center;
     font-size: 11px;
@@ -111,30 +138,54 @@ a {
     background-image: linear-gradient(#4F173C 0%, #210B19 100%);
 }
 .zero {
+    position: absolute;
+    padding-left: 90px;
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 32px;
+    font-size: 24px;
     color: #000;
-    padding-top: 3px;
+    margin-top: -4px;
     padding-bottom: 1px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     -webkit-transition-property: font-size;
     transition-property: font-size;
 }
+
+.zero2 {
+    position: absolute;
+    padding-left: 90px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    margin-top: 3px;
+    padding-bottom: 1px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: font-size;
+    transition-property: font-size;
+}
+
 .subzero {
+    width: 320px;
+    margin: auto;
+    transform: translateX(240px);
+    display: inline-block;
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 16px;
     color: #FF6E0F;
 }
 body {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
     background-image: url("../../assets/img/bg.png");
     background-attachment: fixed;
-    background-size: 361px 361px;
     margin: 0px;
 }
 .header-home2 {
+  min-height: 32px;
     z-index: 100;
     position: fixed;
     top: 0px;
@@ -218,6 +269,7 @@ body {
     font-weight: 800;
 }
 .card {
+
     border-radius: 9px;
     background: #fff;
     display: inline-block;
@@ -443,7 +495,6 @@ hr {
 
 @media only screen and (max-width: 768px) {
     body {
-        background-size: 120px 120px;
     }
     .footer {
         font-size: 14px;
@@ -517,16 +568,23 @@ hr {
     }
     .butt {
         font-size: 12px;
-        min-width: 80px;
+        min-width: 70px;
         padding: 0 22px;
     }
     .buttactive {
         font-size: 12px;
-        min-width: 80px;
+        min-width: 70px;
         padding: 0 22px;
     }
     .zero {
-        -webkit-transition-duration: 0.25s;
-        transition-duration: 0.25s;
+      visibility: hidden;
+    }
+    .zero2{
+      visibility: hidden;
+    }
+    .hello{
+    }
+    .subzero{
+      transform: none;
     }
 }
